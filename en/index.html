@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.124.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>zhaohan&#39;s Blog</title>
+
+<meta name="description" content="lvbibir的个人博客, hugo, papermod, shell, python, linux, mysql, redis, k8s, docker, devops">
+<meta name="author" content="作者:lvbibir">
+<link rel="canonical" href="http://localhost:1313/en/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.ea2d3aa74caabd1c227305342e99c488a04870896b2f729dec906b90f7870787.css" integrity="sha256-6i06p0yqvRwicwU0LpnEiKBIcIlrL3Kd7JBrkPeHB4c=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/img/avatar.gif">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/img/avatar.gif">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/img/avatar.gif">
+<link rel="apple-touch-icon" href="http://localhost:1313/img/avatar.gif">
+<link rel="mask-icon" href="http://localhost:1313/img/avatar.gif">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/en/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/en/index.json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/en/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = ""; 
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<meta property="og:title" content="zhaohan&#39;s Blog" />
+<meta property="og:description" content="lvbibir的个人博客, hugo, papermod, shell, python, linux, mysql, redis, k8s, docker, devops" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/en/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="zhaohan&#39;s Blog"/>
+<meta name="twitter:description" content="lvbibir的个人博客, hugo, papermod, shell, python, linux, mysql, redis, k8s, docker, devops"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "zhaohan's Blog",
+  "url": "http://localhost:1313/",
+  "description": "lvbibir的个人博客, hugo, papermod, shell, python, linux, mysql, redis, k8s, docker, devops",
+  "thumbnailUrl": "http://localhost:1313/img/avatar.gif",
+  "sameAs": [
+      "https://github.com/zhohn0", "mailto:540583339@qq.com"
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/en/" accesskey="h" title="zhaohan&#39;s Blog (Alt + H)">
+                <img src="http://localhost:1313/img/avatar.gif" alt="" aria-label="logo"
+                    height="35">zhaohan&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li class="menu-item">
+                <a href="http://localhost:1313/en/search" title="🔍 搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍 搜索</span>
+                    
+                </a>
+            
+            </li>
+            <li class="menu-item">
+                <a href="http://localhost:1313/en/posts" title="📚 文章">
+                    <span>📚 文章</span>
+                    
+                </a>
+            
+            </li>
+            <li class="menu-item">
+                <a href="http://localhost:1313/en/archives" title="📈 归档">
+                    <span>📈 归档</span>
+                    
+                </a>
+            
+            </li>
+            <li class="menu-item">
+                <a href="http://localhost:1313/en/talk" title="💬 说说">
+                    <span>💬 说说</span>
+                    
+                </a>
+            
+            </li>
+            <li class="menu-item">
+                <a href="http://localhost:1313/en/links" title="🤝 友链">
+                    <span>🤝 友链</span>
+                    
+                </a>
+            
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>欢迎光临小站🥂</h1>
+    </header>
+    <div class="entry-content">
+        本站主要内容包括读书笔记、技术积累、生活感悟。如果能有哪些内容可以帮助到你，那也是极好的。</br> 精通 CSS JavaScript PHP C C++ C# java Ruby Perl Python 等单词的拼写</br> 熟悉 Windows Linux Mac Android IOS 等系统的开关机</br> 喜欢的事情: 🏃‍♂️ 跑步 🎮️ 游戏 🎧 音乐 📺 动漫</br>
+    </div>
+    <footer class="entry-footer">
+        <div class="social-icons">
+    <a href="https://github.com/zhohn0" target="_blank" rel="noopener noreferrer me" title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="mailto:540583339@qq.com" target="_blank" rel="noopener noreferrer me" title="Email">
+        <svg t="1636858389384" class="icon" viewBox="0 0 1318 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="24657" width="24" height="24"><path d="M730.958199 603.743935a174.508039 174.508039 0 0 1-69.444022 14.068401 179.596609 179.596609 0 0 1-74.83192-16.163695L0 333.15171v571.117217a119.731073 119.731073 0 0 0 119.731073 119.731073h1079.375621a119.731073 119.731073 0 0 0 119.731073-119.731073V356.798597z" fill="#f2a355" p-id="24658"></path><path d="M636.66998 492.693365a59.865536 59.865536 0 0 0 47.892429 0l634.275358-266.401637V119.731073a119.731073 119.731073 0 0 0-119.731073-119.731073H119.731073a119.731073 119.731073 0 0 0-119.731073 119.731073v81.716457z" fill="#f2a355" p-id="24659"></path></svg>
+
+    </a>
+</div>
+
+    </footer>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>【置顶】Hello, hugo!
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        记录 wordpress 迁移至 hugo&#43;papermod 的过程, 包含环境搭建、博客美化、功能实现、速度优化等……
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2022-07-06|更新:2024-01-28|字数:2934字|作者:lvbibir
+
+</footer>
+  </div> 
+<figure class="entry-cover"><img loading="lazy" src="https://image.lvbibir.cn/blog/hugo-logo-wide.svg" alt="">
+</figure>
+  <a class="entry-link" aria-label="post link to 【置顶】Hello, hugo!" href="http://localhost:1313/en/posts/blog/hello-hugo/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>C&#43;&#43;17新特性
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        1 C&#43;&#43;17 Language Features 1.1 Template argument deduction for class templates 类模板的模板参数推断 Automatic template argument deduction much like how it’s done for functions, but now including class constructors. 类似于函数的自动模板参数推导，但现在也包括类构造函数。 template &lt;typename T = float&gt; struct MyContainer { T val; MyContainer() : val{} {} MyContainer(T val) : val{val} {} // ... }; MyContainer c1 {1}; // OK MyContainer&lt;int&gt; MyContainer c2; // OK MyContainer&lt;float&gt; 参考 https://github.com/AnthonyCalandra/modern-cpp-features?tab=readme-ov-file#template-argument-deduction-for-class-templates
+        
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2024-04-05|更新:2024-04-05|字数:100字|作者:zhaohan
+
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to C&#43;&#43;17新特性" href="http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;17%E6%96%B0%E7%89%B9%E6%80%A7/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>物理引擎
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        Narrow Phase GJK Support Functions 支撑函数，返回形状A在向量d上的最大投影点，这个点被称为支撑点（Support Point），此操作被称为支撑映射（Support Mapping）。在多边形上寻找支撑点相对容易，遍历多边形顶点找到与d具有最大点积的顶点。 Simplexes GJK在每次迭代中，构建一些列更接近原点的简单形来
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2024-03-31|更新:2024-03-31|字数:456字|作者:zhaohan
+
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to 物理引擎" href="http://localhost:1313/en/posts/tech/graphics/%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>程序是如何运行的
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        1 整个过程 预编译：主要处理源代码文件中的以“#”开头的预编译指令。 编译：把预编译之后生成的xxx.i或xxx.ii文件，进行一系列词法分析、语法分析、语义分析及优化后，生成相应的汇编代码文件。 汇编：将汇编代码转变成机器可以执行的指令(机器码文件)。 链接：目标文件再与库进行链接得到
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2024-03-24|更新:2024-03-24|字数:525字|作者:zhaohan
+
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to 程序是如何运行的" href="http://localhost:1313/en/posts/tech/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E7%A8%8B%E5%BA%8F%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E7%9A%84/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>C&#43;&#43;多态
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        1 多态定义 在基类的函数前加上virtual关键字，在派生类中重写该函数，运行时将会根据对象的实际类型来调用相应的函数。如果对象类型是派生类，就调用派生类的函数；如果对象类型是基类，就调用基类的函数。 2 虚函数表和虚函数指针 每一个有虚函数的类（或有虚函数的类的派生类）都有一个虚函数表
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2024-03-23|更新:2024-03-23|字数:627字|作者:zhaohan
+
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to C&#43;&#43;多态" href="http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%A4%9A%E6%80%81/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>C&#43;&#43;内存结构
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        1 整体结构 代码区：包括代码段和只读数据段，用于存储程序的可执行指令和只读的常量数据。 常量区：const修饰的变量，运行时不可改变。 全局/静态区：程序启动时分配，程序结束时释放。全局变量区的数据可以被整个程序访问，静态变量区的数据仅声明的作用域内可见。 栈区：由编译器自动分配与释放，
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2024-03-22|更新:2024-03-22|字数:227字|作者:zhaohan
+
+</footer>
+  </div> 
+  <a class="entry-link" aria-label="post link to C&#43;&#43;内存结构" href="http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>《谁的青春不迷茫》
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        《谁的青春不迷茫》是刘同 150 万字北漂记录, 跨度十年自我对话, 给都市中焦躁不安困惑迷茫的年轻人
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2024-02-16|更新:2024-02-16|字数:1223字|作者:lvbibir
+
+</footer>
+  </div> 
+<figure class="entry-cover"><img loading="lazy" src="https://image.lvbibir.cn/blog/read-shei-de-qing-chun-bu-mi-mang.jpg" alt="">
+</figure>
+  <a class="entry-link" aria-label="post link to 《谁的青春不迷茫》" href="http://localhost:1313/en/posts/read/shei-de-qing-chun-bu-mi-mang/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>docker 部署 piclist
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        介绍如何使用 docker 部署 piclist 实现 obsidian 远程上传图片至阿里云 OSS 图床
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2023-12-29|更新:2024-01-28|字数:761字|作者:lvbibir
+
+</footer>
+  </div> 
+<figure class="entry-cover"><img loading="lazy" src="https://image.lvbibir.cn/blog/docker.png" alt="">
+</figure>
+  <a class="entry-link" aria-label="post link to docker 部署 piclist" href="http://localhost:1313/en/posts/blog/docker-deploy-piclist/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>steam挂刀教程
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        0 前言 挂刀是指从饰品交易平台购买游戏饰品，在 steam 市场出售以实现将人民币转换为 steam 阿根廷账号余额。 steam 圣诞促销活动快结束了，买了几款游戏后发现阿根廷账号余额没多少了，挂刀过程又比较繁琐，故有此文记录一下挂刀搞余额的步骤。 1 步骤 1.1 网易 buff 账号注册及绑定 buff 账号使用手机号注册即可，绑定需要搞余额
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2023-01-01|更新:2024-01-28|字数:462字|作者:lvbibir
+
+</footer>
+  </div> 
+<figure class="entry-cover"><img loading="lazy" src="https://source.unsplash.com/random/400x200?code" alt="">
+</figure>
+  <a class="entry-link" aria-label="post link to steam挂刀教程" href="http://localhost:1313/en/posts/life/steam-guadao/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>《微习惯》
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        简单到不可能失败的自我管理法则
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2022-07-24|更新:2024-01-28|字数:7536字|作者:lvbibir
+
+</footer>
+  </div> 
+<figure class="entry-cover"><img loading="lazy" src="https://source.unsplash.com/random/400x200?code" alt="">
+</figure>
+  <a class="entry-link" aria-label="post link to 《微习惯》" href="http://localhost:1313/en/posts/read/wei-xi-guan/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>《人间失格》
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        《人间失格》（又名《丧失为人的资格》）日本小说家太宰治创作的中篇小说，发表于 1948 年，是一部半自传体的小说。
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2022-07-09|更新:2024-01-28|字数:640字|作者:lvbibir
+
+</footer>
+  </div> 
+<figure class="entry-cover"><img loading="lazy" src="https://image.lvbibir.cn/blog/renjianshige.jpg" alt="">
+</figure>
+  <a class="entry-link" aria-label="post link to 《人间失格》" href="http://localhost:1313/en/posts/read/ren-jian-shi-ge/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>跑步日常
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        记录一下本跑渣的跑步日常，一点一滴见证自己成长~
+        
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2022-07-07|更新:2024-01-28|字数:57字|作者:lvbibir
+
+</footer>
+  </div> 
+<figure class="entry-cover"><img loading="lazy" src="https://image.lvbibir.cn/blog/cover-running.jpg" alt="">
+</figure>
+  <a class="entry-link" aria-label="post link to 跑步日常" href="http://localhost:1313/en/posts/life/running/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>wordpress | 迁移到 docker
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        记录从阿里云轻量应用服务器 (wordpress 应用) 迁移到 docker 部署，并针对博客的一些优化
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2021-08-01|更新:2024-01-28|字数:2115字|作者:lvbibir
+
+</footer>
+  </div> 
+<figure class="entry-cover"><img loading="lazy" src="https://image.lvbibir.cn/blog/wordpress.jpg" alt="">
+</figure>
+  <a class="entry-link" aria-label="post link to wordpress | 迁移到 docker" href="http://localhost:1313/en/posts/blog/wordpress-to-docker/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>markdown 图片存储方案 | typora &#43; picgo &#43; 七牛云
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        在使用 markdown 写作的过程中，图片的存储是困扰很多人的一个问题，分享下我目前采用的 typora &#43; picgo &#43; 七牛云 的图床配置流程
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2021-07-01|更新:2024-01-28|字数:488字|作者:lvbibir
+
+</footer>
+  </div> 
+<figure class="entry-cover"><img loading="lazy" src="https://source.unsplash.com/random/400x200?code" alt="">
+</figure>
+  <a class="entry-link" aria-label="post link to markdown 图片存储方案 | typora &#43; picgo &#43; 七牛云" href="http://localhost:1313/en/posts/blog/typora-picgo-qiniu-upload-image/"></a>
+</article>
+
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>wordpress | 加载图片失败
+      </h2>
+    </header>
+    <section class="entry-content">
+      <p>
+        1 现象 博客加载不出来我在七牛云的图片资源 使用浏览器直接访问图片 url 却是可以成功的 我将之前 csdn 的博客迁移到了 wordpress，图片外链地址就是 csdn 的，都可以正常加载。 使用浏览器直接访问图片 url 却是可以成功的 我将之前 csdn 的博客迁移到了 wordpress，图片外链地址就是 csdn 的，都可以正常加载。
+        ...
+      </p>
+    </section>
+    <footer class="entry-footer">创建: 2021-07-01|更新:2024-01-28|字数:416字|作者:lvbibir
+
+</footer>
+  </div> 
+<figure class="entry-cover"><img loading="lazy" src="https://image.lvbibir.cn/blog/wordpress.jpg" alt="">
+</figure>
+  <a class="entry-link" aria-label="post link to wordpress | 加载图片失败" href="http://localhost:1313/en/posts/blog/wordpress-load-image-failed/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    
+
+    <span class="pageNum">
+      <a class="pageNow" href="http://localhost:1313/en/">1</a>
+    </span>
+    <span class="numLast">
+        <a class="pageLast" href="http://localhost:1313/en/page/2/">2</a>
+      </span>
+
+    
+    
+    
+  </nav>
+</footer>
+</main>
+
+
+<footer class="footer">
+
+    <a href="https://gohugo.io/" target="_blank">
+        
+        <img style="display: unset;" src="https://image.lvbibir.cn/blog/frame-hugo-blue.svg">
+    </a>
+    <a href="https://github.com/adityatelange/hugo-PaperMod" target="_blank">
+        
+        <img style="display: unset;" src="https://image.lvbibir.cn/blog/theme-papermod-lightgrey.svg">
+    </a>
+    <a href="https://cn.aliyun.com/" target="_blank">
+        
+        <img style="display: unset;" src="https://image.lvbibir.cn/blog/图床-阿里云-orange.svg">
+    </a>
+
+    <br>
+
+    <span id="runtime_span"></span>
+    <script
+        type="text/javascript">function show_runtime() { window.setTimeout("show_runtime()", 1000); X = new Date("7/13/2021 1:00:00"); Y = new Date(); T = (Y.getTime() - X.getTime()); M = 24 * 60 * 60 * 1000; a = T / M; A = Math.floor(a); b = (a - A) * 24; B = Math.floor(b); c = (b - B) * 60; C = Math.floor((b - B) * 60); D = Math.floor((c - C) * 60); runtime_span.innerHTML = "网站已运行" + A + "天" + B + "小时" + C + "分" + D + "秒" } show_runtime();</script>
+    |
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container">
+        
+        总访客数:  <span id="busuanzi_value_site_uv"></span>
+        |
+        总访问量:  <span id="busuanzi_value_site_pv"></span>
+    </span>
+
+    <br>
+
+    <a href="https://beian.miit.gov.cn/" target="_blank" style="border-bottom:1px solid">京ICP备2021023168号-1</a>&nbsp;
+    |
+    <span>
+        Copyright
+        &copy;
+        2020-2024
+        <a href="http://localhost:1313/en/" style="border-bottom:1px solid">zhaohan&#39;s Blog</a>
+    </span>
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+        <span id="read_progress"></span>
+    </span>
+</a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    let mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+
+
+</body>
+
+</html>

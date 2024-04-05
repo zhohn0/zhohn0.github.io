@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>zhaohan&#39;s Blog</title>
+    <link>http://localhost:1313/en/</link>
+    <description>Recent content on zhaohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 05 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【置顶】Hello, hugo!</title>
+      <link>http://localhost:1313/en/posts/blog/hello-hugo/</link>
+      <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/blog/hello-hugo/</guid>
+      <description>记录 wordpress 迁移至 hugo&#43;papermod 的过程, 包含环境搭建、博客美化、功能实现、速度优化等……</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;17新特性</title>
+      <link>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;17%E6%96%B0%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;17%E6%96%B0%E7%89%B9%E6%80%A7/</guid>
+      <description>1 C++17 Language Features 1.1 Template argument deduction for class templates 类模板的模板参数推断 Automatic template argument deduction much like how it&amp;rsquo;s done for functions, but now including class constructors. 类似于函数的自动模板参数推导，但现在也包括类构造函数。 template &amp;lt;typename T = float&amp;gt; struct MyContainer { T val; MyContainer() : val{} {} MyContainer(T val) : val{val} {} // ... }; MyContainer c1 {1}; // OK MyContainer&amp;lt;int&amp;gt; MyContainer c2; // OK MyContainer&amp;lt;float&amp;gt; 参考 https://github.com/AnthonyCalandra/modern-cpp-features?tab=readme-ov-file#template-argument-deduction-for-class-templates</description>
+    </item>
+    
+    <item>
+      <title>物理引擎</title>
+      <link>http://localhost:1313/en/posts/tech/graphics/%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E/</link>
+      <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tech/graphics/%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E/</guid>
+      <description>Narrow Phase GJK Support Functions 支撑函数，返回形状A在向量d上的最大投影点，这个点被称为支撑点（Support Point），此操作被称为支撑映射（Support Mapping）。在多边形上寻找支撑点相对容易，遍历多边形顶点找到与d具有最大点积的顶点。 Simplexes GJK在每次迭代中，构建一些列更接近原点的简单形来</description>
+    </item>
+    
+    <item>
+      <title>程序是如何运行的</title>
+      <link>http://localhost:1313/en/posts/tech/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E7%A8%8B%E5%BA%8F%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E7%9A%84/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tech/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E7%A8%8B%E5%BA%8F%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E7%9A%84/</guid>
+      <description>1 整个过程 预编译：主要处理源代码文件中的以“#”开头的预编译指令。 编译：把预编译之后生成的xxx.i或xxx.ii文件，进行一系列词法分析、语法分析、语义分析及优化后，生成相应的汇编代码文件。 汇编：将汇编代码转变成机器可以执行的指令(机器码文件)。 链接：目标文件再与库进行链接得到</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;多态</title>
+      <link>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%A4%9A%E6%80%81/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%A4%9A%E6%80%81/</guid>
+      <description>1 多态定义 在基类的函数前加上virtual关键字，在派生类中重写该函数，运行时将会根据对象的实际类型来调用相应的函数。如果对象类型是派生类，就调用派生类的函数；如果对象类型是基类，就调用基类的函数。 2 虚函数表和虚函数指针 每一个有虚函数的类（或有虚函数的类的派生类）都有一个虚函数表</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;内存结构</title>
+      <link>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84/</guid>
+      <description>1 整体结构 代码区：包括代码段和只读数据段，用于存储程序的可执行指令和只读的常量数据。 常量区：const修饰的变量，运行时不可改变。 全局/静态区：程序启动时分配，程序结束时释放。全局变量区的数据可以被整个程序访问，静态变量区的数据仅声明的作用域内可见。 栈区：由编译器自动分配与释放，</description>
+    </item>
+    
+    <item>
+      <title>《谁的青春不迷茫》</title>
+      <link>http://localhost:1313/en/posts/read/shei-de-qing-chun-bu-mi-mang/</link>
+      <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/read/shei-de-qing-chun-bu-mi-mang/</guid>
+      <description>《谁的青春不迷茫》是刘同 150 万字北漂记录, 跨度十年自我对话, 给都市中焦躁不安困惑迷茫的年轻人</description>
+    </item>
+    
+    <item>
+      <title>docker 部署 piclist</title>
+      <link>http://localhost:1313/en/posts/blog/docker-deploy-piclist/</link>
+      <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/blog/docker-deploy-piclist/</guid>
+      <description>介绍如何使用 docker 部署 piclist 实现 obsidian 远程上传图片至阿里云 OSS 图床</description>
+    </item>
+    
+    <item>
+      <title>steam挂刀教程</title>
+      <link>http://localhost:1313/en/posts/life/steam-guadao/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/life/steam-guadao/</guid>
+      <description>0 前言 挂刀是指从饰品交易平台购买游戏饰品，在 steam 市场出售以实现将人民币转换为 steam 阿根廷账号余额。 steam 圣诞促销活动快结束了，买了几款游戏后发现阿根廷账号余额没多少了，挂刀过程又比较繁琐，故有此文记录一下挂刀搞余额的步骤。 1 步骤 1.1 网易 buff 账号注册及绑定 buff 账号使用手机号注册即可，绑定需要搞余额</description>
+    </item>
+    
+    <item>
+      <title>《微习惯》</title>
+      <link>http://localhost:1313/en/posts/read/wei-xi-guan/</link>
+      <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/read/wei-xi-guan/</guid>
+      <description>简单到不可能失败的自我管理法则</description>
+    </item>
+    
+    <item>
+      <title>《人间失格》</title>
+      <link>http://localhost:1313/en/posts/read/ren-jian-shi-ge/</link>
+      <pubDate>Sat, 09 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/read/ren-jian-shi-ge/</guid>
+      <description>《人间失格》（又名《丧失为人的资格》）日本小说家太宰治创作的中篇小说，发表于 1948 年，是一部半自传体的小说。</description>
+    </item>
+    
+    <item>
+      <title>跑步日常</title>
+      <link>http://localhost:1313/en/posts/life/running/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/life/running/</guid>
+      <description>记录一下本跑渣的跑步日常，一点一滴见证自己成长~</description>
+    </item>
+    
+    <item>
+      <title>🙋🏻‍♂️ 关于</title>
+      <link>http://localhost:1313/en/about/</link>
+      <pubDate>Sat, 06 Nov 2021 14:57:28 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/about/</guid>
+      <description>🏡 关于本站 本博客主要记录一些学习生活，和一些个人觉得值得记录的问题及其解决办法。如果本博客能有哪些内容帮助到了你，那也是极好的。 👦🏻 博主是谁 网络时代的素质教育漏网之鱼 | 晚睡协会常任理事 | 国家级抬杠运动员 | 中国驰名窝里横 | 国宝级老污龟 | 超水平怼人大师 | 一秒入戏准影帝 精通CSS、Ja</description>
+    </item>
+    
+    <item>
+      <title>🤝 友链</title>
+      <link>http://localhost:1313/en/links/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/links/</guid>
+      <description>👉友链为随机顺序 lvbibir&amp;#39;s Blog 我的 wordpress 站点 cuikx&amp;#39;s blog cuikx&amp;#39;s blog Sulv&amp;#39;s Blog 一个记录技术、阅读、生活的博客 陈桂林博客 成功最有效的方法就是向有经验的人学习！ 黄忠德的博客 DevOps,SRE,Python,Golang程序员,开源爱好者 阿虚同学的储物间 收集了很多实用网站 老生杂谈的 IT 人 老生杂谈，后继有人。 Yunyi’s</description>
+    </item>
+    
+    <item>
+      <title>💬 说说</title>
+      <link>http://localhost:1313/en/talk/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/talk/</guid>
+      <description>胡言乱语</description>
+    </item>
+    
+    <item>
+      <title>wordpress | 迁移到 docker</title>
+      <link>http://localhost:1313/en/posts/blog/wordpress-to-docker/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/blog/wordpress-to-docker/</guid>
+      <description>记录从阿里云轻量应用服务器 (wordpress 应用) 迁移到 docker 部署，并针对博客的一些优化</description>
+    </item>
+    
+    <item>
+      <title>markdown 图片存储方案 | typora &#43; picgo &#43; 七牛云</title>
+      <link>http://localhost:1313/en/posts/blog/typora-picgo-qiniu-upload-image/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/blog/typora-picgo-qiniu-upload-image/</guid>
+      <description>在使用 markdown 写作的过程中，图片的存储是困扰很多人的一个问题，分享下我目前采用的 typora &#43; picgo &#43; 七牛云 的图床配置流程</description>
+    </item>
+    
+    <item>
+      <title>wordpress | 加载图片失败</title>
+      <link>http://localhost:1313/en/posts/blog/wordpress-load-image-failed/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/blog/wordpress-load-image-failed/</guid>
+      <description>1 现象 博客加载不出来我在七牛云的图片资源 使用浏览器直接访问图片 url 却是可以成功的 我将之前 csdn 的博客迁移到了 wordpress，图片外链地址就是 csdn 的，都可以正常加载。 使用浏览器直接访问图片 url 却是可以成功的 我将之前 csdn 的博客迁移到了 wordpress，图片外链地址就是 csdn 的，都可以正常加载。</description>
+    </item>
+    
+    <item>
+      <title>wordpress | 添加 icp 备案号</title>
+      <link>http://localhost:1313/en/posts/blog/wordpress-add-icp/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/blog/wordpress-add-icp/</guid>
+      <description>记录wordpress中如何添加icp备案号</description>
+    </item>
+    
+    <item>
+      <title>wordpress | 配置免费 ssl 证书和 https 强制跳转</title>
+      <link>http://localhost:1313/en/posts/blog/wordpress-ssl/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/blog/wordpress-ssl/</guid>
+      <description>介绍如何为阿里轻量应用服务器 (wordpress 应用) 配置 ssl 证书，开启 https 访问且实现https 强制跳转</description>
+    </item>
+    
+    
+    
+  </channel>
+</rss>

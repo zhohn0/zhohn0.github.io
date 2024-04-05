@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>👨🏻‍💻 技术 on zhaohan&#39;s Blog</title>
+    <link>http://localhost:1313/en/posts/tech/</link>
+    <description>Recent content in 👨🏻‍💻 技术 on zhaohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 29 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43;17新特性</title>
+      <link>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;17%E6%96%B0%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;17%E6%96%B0%E7%89%B9%E6%80%A7/</guid>
+      <description>1 C++17 Language Features 1.1 Template argument deduction for class templates 类模板的模板参数推断 Automatic template argument deduction much like how it&amp;rsquo;s done for functions, but now including class constructors. 类似于函数的自动模板参数推导，但现在也包括类构造函数。 template &amp;lt;typename T = float&amp;gt; struct MyContainer { T val; MyContainer() : val{} {} MyContainer(T val) : val{val} {} // ... }; MyContainer c1 {1}; // OK MyContainer&amp;lt;int&amp;gt; MyContainer c2; // OK MyContainer&amp;lt;float&amp;gt; 参考 https://github.com/AnthonyCalandra/modern-cpp-features?tab=readme-ov-file#template-argument-deduction-for-class-templates</description>
+    </item>
+    
+    <item>
+      <title>物理引擎</title>
+      <link>http://localhost:1313/en/posts/tech/graphics/%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E/</link>
+      <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tech/graphics/%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E/</guid>
+      <description>Narrow Phase GJK Support Functions 支撑函数，返回形状A在向量d上的最大投影点，这个点被称为支撑点（Support Point），此操作被称为支撑映射（Support Mapping）。在多边形上寻找支撑点相对容易，遍历多边形顶点找到与d具有最大点积的顶点。 Simplexes GJK在每次迭代中，构建一些列更接近原点的简单形来</description>
+    </item>
+    
+    <item>
+      <title>程序是如何运行的</title>
+      <link>http://localhost:1313/en/posts/tech/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E7%A8%8B%E5%BA%8F%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E7%9A%84/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tech/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E7%A8%8B%E5%BA%8F%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E7%9A%84/</guid>
+      <description>1 整个过程 预编译：主要处理源代码文件中的以“#”开头的预编译指令。 编译：把预编译之后生成的xxx.i或xxx.ii文件，进行一系列词法分析、语法分析、语义分析及优化后，生成相应的汇编代码文件。 汇编：将汇编代码转变成机器可以执行的指令(机器码文件)。 链接：目标文件再与库进行链接得到</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;多态</title>
+      <link>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%A4%9A%E6%80%81/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%A4%9A%E6%80%81/</guid>
+      <description>1 多态定义 在基类的函数前加上virtual关键字，在派生类中重写该函数，运行时将会根据对象的实际类型来调用相应的函数。如果对象类型是派生类，就调用派生类的函数；如果对象类型是基类，就调用基类的函数。 2 虚函数表和虚函数指针 每一个有虚函数的类（或有虚函数的类的派生类）都有一个虚函数表</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;内存结构</title>
+      <link>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84/</guid>
+      <description>1 整体结构 代码区：包括代码段和只读数据段，用于存储程序的可执行指令和只读的常量数据。 常量区：const修饰的变量，运行时不可改变。 全局/静态区：程序启动时分配，程序结束时释放。全局变量区的数据可以被整个程序访问，静态变量区的数据仅声明的作用域内可见。 栈区：由编译器自动分配与释放，</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>C&#43;&#43; on zhaohan&#39;s Blog</title>
+    <link>http://localhost:1313/en/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on zhaohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 05 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43;17新特性</title>
+      <link>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;17%E6%96%B0%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;17%E6%96%B0%E7%89%B9%E6%80%A7/</guid>
+      <description>1 C++17 Language Features 1.1 Template argument deduction for class templates 类模板的模板参数推断 Automatic template argument deduction much like how it&amp;rsquo;s done for functions, but now including class constructors. 类似于函数的自动模板参数推导，但现在也包括类构造函数。 template &amp;lt;typename T = float&amp;gt; struct MyContainer { T val; MyContainer() : val{} {} MyContainer(T val) : val{val} {} // ... }; MyContainer c1 {1}; // OK MyContainer&amp;lt;int&amp;gt; MyContainer c2; // OK MyContainer&amp;lt;float&amp;gt; 参考 https://github.com/AnthonyCalandra/modern-cpp-features?tab=readme-ov-file#template-argument-deduction-for-class-templates</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;多态</title>
+      <link>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%A4%9A%E6%80%81/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%A4%9A%E6%80%81/</guid>
+      <description>1 多态定义 在基类的函数前加上virtual关键字，在派生类中重写该函数，运行时将会根据对象的实际类型来调用相应的函数。如果对象类型是派生类，就调用派生类的函数；如果对象类型是基类，就调用基类的函数。 2 虚函数表和虚函数指针 每一个有虚函数的类（或有虚函数的类的派生类）都有一个虚函数表</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;内存结构</title>
+      <link>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tech/c&#43;&#43;/c&#43;&#43;%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84/</guid>
+      <description>1 整体结构 代码区：包括代码段和只读数据段，用于存储程序的可执行指令和只读的常量数据。 常量区：const修饰的变量，运行时不可改变。 全局/静态区：程序启动时分配，程序结束时释放。全局变量区的数据可以被整个程序访问，静态变量区的数据仅声明的作用域内可见。 栈区：由编译器自动分配与释放，</description>
+    </item>
+    
+  </channel>
+</rss>
